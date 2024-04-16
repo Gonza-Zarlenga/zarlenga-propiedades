@@ -17,5 +17,5 @@ app.use ('/', mainRouter);
 // corriendo el servidor 
 
 app.listen (3040,()=>{
-    console.log ("corriendo ok")
+    console.log ("corriendo ook")
 });
