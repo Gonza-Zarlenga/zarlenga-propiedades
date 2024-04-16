@@ -1,0 +1,159 @@
+* {
+  padding: 2px;
+}
+
+
+/* header */
+
+
+.cajaHeader {
+  width: 99%;
+  border: 4px solid rgba(224, 17, 17, 0.917);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4px;
+}
+
+.cajaHeaderPosition {
+  border-radius: 10px;
+  border: solid 2px blue;
+  background-color: aqua;
+}
+
+.cajaHeaderPosition:first-child {
+  grid-column: 1/3;
+  text-align: center;
+  
+}
+
+.cajaHeaderPosition:nth-child(2) {
+  grid-column: 1/4;
+}
+
+.cajaHeaderPosition:last-child {
+  grid-column: 3/4;
+  grid-row: 2/-1;
+  text-align: center;
+}
+
+.navbar{
+border: solid red 3px;
+position: relative;
+top:35px;
+}
+
+
+.cajaLista{
+  list-style:none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+
+}
+
+.estiloLista{
+  border: solid 2px red;
+  background-color: rgb(255, 232, 127);
+  border-radius: 6px;
+  font-size: 16px;
+  display: block;
+  
+
+
+}
+
+.logoTitle {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-size: 40px;
+  
+}
+
+
+
+
+/* mian */
+
+.sectionAlq{
+  /* border: solid 3px red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+
+  
+}
+
+.cajaAlquiler{
+  width: 415px;
+  background-color: rgb(213, 208, 208);
+  /* border: rgb(168, 166, 166) solid 2px; */
+  border-radius: 20px;
+  padding: 6px;
+  margin: 8px;
+}
+
+.cajaAlquiler:hover{
+  box-shadow: -1px 1px 29px 0px rgba(0,0,0,0.69);
+-webkit-box-shadow: -1px 1px 29px 0px rgba(0,0,0,0.69);
+-moz-box-shadow: -1px 1px 29px 0px rgba(0,0,0,0.69);
+}
+
+.cajaAlquiler h2{
+  color: rgb(242, 125, 0);
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  
+}
+
+.cajaAlquiler h2:hover{
+  /* box-shadow: 5px 5px 5px rgb(155, 154, 154); */
+}
+
+.sectionTasa{
+  border: solid blue 4px;
+  margin: 6px;
+  text-align: center;
+}
+
+.sectionTerreno{
+  border: solid 3px red;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  
+}
+
+.cajaTerreno{
+  background-color: rgb(213, 208, 208);
+  border: green solid 3px;
+  border-radius: 20px;
+  padding: 4px;
+  margin: 2px;
+}
+
+.imagenes{
+  width: 400px;
+  height: 300px;
+  padding: 8px;
+  border-radius: 18px;
+}
+
+/* footer */
+
+footer {
+  padding: 2px;
+  padding-bottom: 20px;
+  background-color: rgba(215, 211, 211, 0.917);
+}
+
+;
+
+.information {
+  display: none;
+  margin: 2px;
+}
+
+@media screen and (min-width: 425px) {
+  /* Agrega estilos para pantallas más grandes aquí */
+}
