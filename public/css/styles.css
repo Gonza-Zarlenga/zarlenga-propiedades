@@ -1,149 +1,219 @@
-* {
+body {
   padding: 2px;
-}
-
-
-/* header */
-
-
-.cajaHeader {
-  width: 99%;
-  border: 4px solid rgba(224, 17, 17, 0.917);
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 4px;
-}
-
-.cajaHeaderPosition {
-  border-radius: 10px;
-  border: solid 2px blue;
-  background-color: aqua;
-}
-
-.cajaHeaderPosition:first-child {
-  grid-column: 1/3;
-  text-align: center;
-  
-}
-
-.cajaHeaderPosition:nth-child(2) {
-  grid-column: 1/4;
-}
-
-.cajaHeaderPosition:last-child {
-  grid-column: 3/4;
-  grid-row: 2/-1;
-  text-align: center;
-}
-
-.navbar{
-border: solid red 3px;
-position: relative;
-top:35px;
-}
-
-
-.cajaLista{
-  list-style:none;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  text-align: center;
-
-}
-
-.estiloLista{
-  border: solid 2px red;
-  background-color: rgb(255, 232, 127);
-  border-radius: 6px;
-  font-size: 16px;
-  display: block;
-  
-
-
-}
-
-.logoTitle {
   font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-size: 40px;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  min-height: 100vh;
+}
+header, main, footer{
+  width: 100%;
 }
 
-
-
-
-/* mian */
-
-.sectionAlq{
-  /* border: solid 3px red; */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2px;
-
-  
+nav, header, main, body, footer{
+  box-sizing: border-box;
 }
 
-.cajaAlquiler{
-  width: 415px;
-  background-color: rgb(213, 208, 208);
-  /* border: rgb(168, 166, 166) solid 2px; */
-  border-radius: 20px;
-  padding: 6px;
-  margin: 8px;
-}
+/* HEADER */
 
-.cajaAlquiler:hover{
-  box-shadow: -1px 1px 29px 0px rgba(0,0,0,0.69);
--webkit-box-shadow: -1px 1px 29px 0px rgba(0,0,0,0.69);
--moz-box-shadow: -1px 1px 29px 0px rgba(0,0,0,0.69);
-}
 
-.cajaAlquiler h2{
-  color: rgb(242, 125, 0);
-  -webkit-text-stroke-width: 0.3px;
-  -webkit-text-stroke-color: rgb(0, 0, 0);
-  
-}
-
-.cajaAlquiler h2:hover{
-  /* box-shadow: 5px 5px 5px rgb(155, 154, 154); */
-}
-
-.sectionTasa{
-  border: solid blue 4px;
-  margin: 6px;
+.header {
+  width: 99%;
   text-align: center;
 }
 
-.sectionTerreno{
-  border: solid 3px red;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 8px;
+.title {
+  text-align: center;
+  font-size: 90px;
+  margin: 8px;
+  padding: 15px;
+  /* border: green 1px solid; */
+}
+
+nav a{
+  text-decoration: none;
+}
+
+.main_navbar ul{
+  display: flex;
+  padding: 3px;
+  margin-top: 30px;
+  text-align: center;
+  justify-content: center;
+  /* border: blue solid 1px; */
+}
+
+.main_navbar li{
+  list-style-type: none;
+  margin: 9px;
+  /* border: red solid 1px; */
+}
+
+.main_navbar a{
+  color: black;
+  padding: 10px 15px;
+  display: inline-block;
+}
+.main_navbar a:hover{
+  color: rgba(255, 150, 30, 0.854);
+}
+
+
+/* MIAN */
+
+.banner{
+  /* border: red solid 1px; */
+  align-self: center;
+  width: 90%;
+  height: 700px;
+  border-radius: 41px;
+  margin: 15px;
+  object-fit: cover;
+}
+
+
+.main_wrapper{
+  padding: 20px;
+  border: solid orange 3px;
+}
+
+.title__destacados{
+  font-family:"Roboto", sans-serif;
+  font-size: 90px;
+  text-wrap: balance;
+  display: line;
+  margin: 3px;
+  padding: 8px;
+}
+.bloqueAlquiler{
+  display: flex;
+  padding: 0;
+  /* border: solid red 2px; */
+  gap: 10px;
+  justify-content: space-evenly;
+  
+}
+.bloqueAlquiler__items{
+  list-style-type: none;
+  background-color: rgb(192, 192, 192);
+  border: rgb(5, 5, 5) 2px solid;
+  margin: 20px;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  align-content: center;
+  /* flex-grow: 1; */
+  /* flex-shrink: 2; */
   
 }
 
-.cajaTerreno{
-  background-color: rgb(213, 208, 208);
-  border: green solid 3px;
-  border-radius: 20px;
-  padding: 4px;
+.bloqueAlquiler__items:hover{
+  background-color: rgba(255, 150, 30, 0.854);
+
+}
+
+.bloqueAlquiler__items a{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.zonaTitulo{
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+
+.bloqueTaza{
+  display: block;
+  text-align: center;
+  font-family:"Raleway", sans-serif;
+  font-size: 40px;
+  padding: 40px;
+  margin: 30px;
+  /* border: red solid 1px; */
+}
+
+.bloqueTaza h2{
   margin: 2px;
 }
 
-.imagenes{
-  width: 400px;
-  height: 300px;
-  padding: 8px;
-  border-radius: 18px;
+.bloqueTaza p{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  font-size: 25px;
+  text-wrap: balance;
+  white-space: pre-wrap;
+  padding: 13px;
+  text-align: center;
 }
+
+textarea{
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 50%;
+  min-height: 200px;
+  resize: none;
+  background-color:rgba(215, 211, 211, 0.917);;
+  border-radius: 16px;
+  border: none;
+}
+
+textarea::placeholder{
+  padding: 12px;
+  text-orientation: sideways;
+}
+
+button{
+  font-size: 16px;
+}
+
+.bloqueVenta{
+  display: flex;
+  padding: 0;
+  margin-top: 50px;
+  border: solid red 2px;
+  justify-content: center;
+  gap:5%;
+}
+
+.bloqueVenta__items{
+  list-style-type: none;
+  background-color: rgb(192, 192, 192);
+  border: rgb(5, 5, 5) 2px solid;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 35px;
+  width: 289px;
+  height: 320px;
+  text-align: center;
+  align-content:center;
+  /* flex-grow: 1; */
+  /* flex-shrink: 2; */
+}
+
+.bloqueVenta__items:hover{
+  background-color: rgba(255, 150, 30, 0.854);
+}
+
+.bloqueVenta__items a{
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  left: 50px;
+}
+  
 
 /* footer */
 
 footer {
-  padding: 2px;
-  padding-bottom: 20px;
+  color: rgb(68, 68, 68);
+  margin-top: auto;
+  padding: 25px;
   background-color: rgba(215, 211, 211, 0.917);
 }
 
@@ -154,6 +224,23 @@ footer {
   margin: 2px;
 }
 
-@media screen and (min-width: 425px) {
-  /* Agrega estilos para pantallas más grandes aquí */
+
+@media screen and (max-width: 768px) {
+  .bloqueAlquiler__items{
+    width: 125px;
+    height: 125px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .bloqueAlquiler__items{
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .bloqueAlquiler__items{
+    width: 400px;
+    height: 400px;
+  }
 }
