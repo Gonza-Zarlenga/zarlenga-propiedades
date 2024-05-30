@@ -80,6 +80,17 @@ nav a {
   transition: opacity 0.5s ease-in-out; */
 }
 
+.navbar_container::after{
+  display: flex;
+  position: sticky;
+  background-color: rgba(215, 211, 211, 0.917);
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 4px 19px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
 
 .navbar_list {
   display: flex;
@@ -141,6 +152,19 @@ nav a {
 .sectionAlq{
   padding: 80px 40px;
   
+}
+scroll-container{
+  display: block;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 5em;
 }
 
 .bloqueAlquiler {

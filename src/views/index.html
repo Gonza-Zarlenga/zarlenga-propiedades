@@ -32,17 +32,19 @@
         <h1 class="title">Zarlenga Propiedades</h1>
         <nav class="main_navbar">
             <ul>
-                <li><a href="#">inicio</a></li>
-                <li><a href="#">alquileres</a></li>
-                <li><a href="#">venta</a></li>
-                <li><a href="#">tazar</a></li>
-                <li><a href="#">contacto</a></li>
+                <li><a href="#main_page">inicio</a></li>
+                <li><a href="#page-1">alquileres</a></li>
+                <li><a href="#page-2">venta</a></li>
+                <li><a href="#page-3">tazar</a></li>
+                <li><a href="#page-4">contacto</a></li>
             </ul>
         </nav>
     </header>
     <img class="banner" src="img/paraProyecto.jpg">
     <main class="main_wrapper">
+        <scroll-container>
         <section class="sectionAlq">
+            <scroll-page id="page-1"></scroll-page>
             <h2 class="title__destacados">Alquileres</h2>
             <h2 class="title__destacados">Destacados</h2>
             <h3>
@@ -56,7 +58,10 @@
                 <li class="bloqueAlquiler__items"><a>Precio</a></li>
             </ul>
         </section>
+    </scroll-container>
         <section>
+            <scroll-container>
+                <scroll-page id="page-2"></scroll-page>
             <div class="bloqueTaza">
                 <h2>¿Queres conocer el valor</h2>
                 <h2>real de tu vivienda?</h2>
@@ -68,6 +73,7 @@
                 </div>
                 <button>Enviar</button>
             </div>
+        </scroll-container>
         </section>
         <section>
             <div class="seccionVneta">
