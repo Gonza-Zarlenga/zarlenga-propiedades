@@ -69,15 +69,23 @@ nav a {
 
 .navbar_container {
   display: flex;
-  background-color: rgba(215, 211, 211, 0.917);
+  position:sticky;
+  top:1px;
+  background-color: rgba(215, 211, 211);
   justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 4px 19px;
   box-sizing: border-box;
-  max-width: 100%;
+  min-width: 100%;
+  border-bottom: solid 3px orange;
+  
   /* opacity: 0;
   transition: opacity 0.5s ease-in-out; */
+}
+
+.navbar_container:hover{
+  opacity: 1;
 }
 
 .navbar_container::after{
@@ -126,6 +134,7 @@ nav a {
 
 .banner {
   /* border: red solid 1px; */
+  /* display: block; */
   align-self: center;
   width: 90%;
   height: 700px;
@@ -137,7 +146,7 @@ nav a {
 
 .main_wrapper {
   padding: 20px;
-  border-bottom: solid orange 3px;
+  /* border-bottom: solid orange 3px; */
 }
 
 .title__destacados {
@@ -307,30 +316,46 @@ button {
 
 footer {
   color: rgb(68, 68, 68);
-  margin-top: auto;
-  padding: 25px;
+  border-top: orange solid 3px;
+  margin-top: 30px;
+  padding: 50px;
   background-color: rgba(215, 211, 211, 0.917);
+  min-height: 25vh;
 }
 
 .footer_container{
   display: flex;
-  margin: 0;
-  justify-content: center;
+  /* background-color: aquamarine; */
+  margin: auto;
+  flex-direction: column;
   align-items: center;
+  align-content: center;
+  gap: 8px;
+}
+
+.footer_container h2{
+  margin:auto;
+  font-size: 35px;
 }
 
 .footer_list{
   display: flex;
-  gap:12px;
-}
-
-.footer_items{
   flex-direction: row;
+  font-size: 15px;
+  gap:20px;
   list-style-type: none;
 }
 
-.footer_items a{
+.footer_items{
+  text-decoration: none;
+  flex-direction: row;
 
+}
+
+.footer_items a{
+  list-style-type: none;
+  text-decoration: none;
+  color: black
 }
 
 ;

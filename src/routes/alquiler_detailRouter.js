@@ -3,11 +3,11 @@ const router = express.Router();
 
 // importamos el controlador de rutas
 
-const alquilerController = require ('../controllers/alquilerContoller');
+const alquiler_detailController = require ('../controllers/alquiler_detailController');
 
 // procesamos el pedido por get
 
-router.get ("/", alquilerController.index);
+router.get ("/", alquiler_detailController.index);
 
 // exportamos el modulo
 
